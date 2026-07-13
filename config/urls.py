@@ -1,0 +1,24 @@
+from django.contrib import admin
+from django.urls import path, include
+from drf_spectacular.views import (
+    SpectacularAPIView,
+    SpectacularRedocView,
+    SpectacularSwaggerView,
+)
+
+urlpatterns = [
+    path("admin/", admin.site.urls),
+    
+    # Swagger / OpenAPI documentation
+    path("api/schema/", SpectacularAPIView.as_view(), name="schema"),
+    path("api/docs/", SpectacularSwaggerView.as_view(url_name="schema"), name="swagger-ui"),
+    path("api/redoc/", SpectacularRedocView.as_view(url_name="schema"), name="redoc"),
+    
+    # Internal API Routes
+    path("api/auth/", include("apps.users.urls")),
+    path("api/", include("apps.salons.urls")),
+    path("api/", include("apps.employees.urls")),
+    path("api/", include("apps.scheduling.urls")),
+    path("api/", include("apps.appointments.urls")),
+    path("api/", include("apps.notifications.urls")),
+]

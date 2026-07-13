@@ -1,0 +1,80 @@
+# ==========================
+# Django Core
+# ==========================
+Django>=5.2,<6.0
+djangorestframework>=3.16
+
+# ==========================
+# Authentication
+# ==========================
+djangorestframework-simplejwt
+PyJWT
+
+# ==========================
+# Database
+# ==========================
+psycopg[binary]
+
+# ==========================
+# Filtering & Pagination
+# ==========================
+django-filter
+
+# ==========================
+# API Documentation
+# ==========================
+drf-spectacular
+drf-spectacular-sidecar
+
+# ==========================
+# Image Handling
+# ==========================
+Pillow
+
+# ==========================
+# CORS
+# ==========================
+django-cors-headers
+
+# ==========================
+# Environment Variables
+# ==========================
+python-decouple
+
+# or use:
+# python-dotenv
+
+# ==========================
+# Celery
+# ==========================
+celery
+redis
+django-celery-beat
+django-celery-results
+
+
+# ==========================
+# Production
+# ==========================
+gunicorn
+whitenoise
+
+# ==========================
+# Testing
+# ==========================
+pytest
+pytest-django
+factory-boy
+coverage
+
+# ==========================
+# Code Quality
+# ==========================
+black
+ruff
+isort
+
+# ==========================
+# Utilities
+# ==========================
+requests
