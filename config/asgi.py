@@ -1,5 +1,5 @@
 """
-ASGI config for salonBackend project.
+ASGI config for the Django API template project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 

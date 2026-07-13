@@ -1,5 +1,5 @@
 """
-WSGI config for salonBackend project.
+WSGI config for the Django API template project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 

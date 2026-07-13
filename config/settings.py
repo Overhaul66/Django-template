@@ -26,8 +26,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    
-    # Third Party Apps
+
+    # Third-party apps
     "rest_framework",
     "rest_framework_simplejwt",
     "rest_framework_simplejwt.token_blacklist",
@@ -35,15 +35,10 @@ INSTALLED_APPS = [
     "corsheaders",
     "drf_spectacular",
     "drf_spectacular_sidecar",
-    
-    # Internal Apps
+
+    # Project apps
     "apps.common",
     "apps.users",
-    "apps.salons",
-    "apps.employees",
-    "apps.scheduling",
-    "apps.appointments",
-    "apps.notifications",
 ]
 
 MIDDLEWARE = [
@@ -106,7 +101,6 @@ AUTH_PASSWORD_VALIDATORS = [
     {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator"},
 ]
 
-# Custom User Model
 AUTH_USER_MODEL = "users.CustomUser"
 
 # Internationalization
@@ -162,8 +156,8 @@ SIMPLE_JWT = {
 
 # OpenAPI / Swagger configuration
 SPECTACULAR_SETTINGS = {
-    "TITLE": "Salon Management API",
-    "DESCRIPTION": "API documentation for the Salon Management backend application.",
+    "TITLE": "Django API Template",
+    "DESCRIPTION": "Starter API documentation for a reusable Django project template.",
     "VERSION": "1.0.0",
     "SERVE_INCLUDE_SCHEMA": False,
     "SWAGGER_UI_DIST": "SIDECAR",
